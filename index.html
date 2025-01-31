@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/86066eac30.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header__navbar">
+        <ul class="header__navbar--list">
+          <li class="header__navbar--list--item">
+            <span style="border-right: 1px solid white; padding-right: 10px"
+              >Vào cửa hàng trên Ứng Dụng</span
+            >
+          </li>
+          <li class="header__navbar--list--item"><span>Kết Nối</span></li>
+          <li class="header__navbar--list--item">
+            <i class="fa-brands fa-facebook"></i>
+          </li>
+          <li class="header__navbar--list--item">
+            <i class="fa-brands fa-instagram"></i>
+          </li>
+        </ul>
+        <ul class="header__navbar--list">
+          <li class="header__navbar--list--item">
+            <i class="fa-solid fa-bell"></i>
+            <span>Thông Báo</span>
+          </li>
+          <li class="header__navbar--list--item">
+            <i class="fa-solid fa-question"></i>
+            <span>Trợ Giúp</span>
+          </li>
+          <li class="header__navbar--list--item">
+            <img
+              class="header__navber--user--img"
+              src="https://static.vecteezy.com/system/resources/previews/011/961/865/non_2x/programmer-icon-line-color-illustration-vector.jpg"
+              alt=""
+              style="width: 22px; height: 22px; border-radius: 50%"
+            />
+          </li>
+          <li><span class="header__navbar--user--name">Phan Thanh Tú</span></li>
+        </ul>
+      </div>
+      <div class="header__search">
+        <img
+          class="header__search--shopee--logo"
+          src="./shopee_logo.jpg"
+          alt=""
+        />
+        <div class="header__search--searchbar">
+          <div class="header__search--searchbar--input">
+            <input type="text" placeholder="Tìm sản phẩm trong Shop này" />
+          </div>
+
+          <div class="header__search--searchbar--select">
+            <div style="display: flex">
+              <span
+                style="
+                  margin-right: 10px;
+                  color: black;
+                  font-size: 15px;
+                  height: 20px;
+                "
+                >Trong Shop</span
+              >
+              <div style="display: flex">
+                <div>
+                  <i
+                    class="fas fa-chevron-down header__search--sellect--icon"
+                  ></i>
+                  <ul class="dropdown">
+                    <li>
+                      <span>Trong Shop a</span>
+                      <i class="fas fa-check"></i>
+                    </li>
+                    <li>
+                      <span>Trong Shop b</span>
+                      <i class="fas fa-check"></i>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div>
+                <div class="header__search--glass--logo">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <i
+            class="fa-solid fa-cart-shopping"
+            style="font-size: 30px; color: white"
+          ></i>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <div class="main">
+      <aside class="sidebar">
+        <h3 class="sidebar__title">
+          <i class="fa-solid fa-list" style="color: #000000"></i>
+          <span>Danh Mục</span>
+        </h3>
+        <div
+          class="sidebar__content"
+          style="border-top: 1px solid black; font-size: 15px"
+        >
+          <ul class="sidebar__content--list">
+            <li class="sidebar__content--list--item" style="color: #dc3f2a">
+              <i
+                class="fa-solid fa-caret-up fa-rotate-90"
+                style="color: #dc3f2a"
+              ></i>
+              <span>Trang điểm mặt</span>
+            </li>
+            <li class="sidebar__content--list--item">
+              <span>Trang điểm môi</span>
+            </li>
+            <li class="sidebar__content--list--item">
+              <span>Trang điểm mắt</span>
+            </li>
+          </ul>
+        </div>
+      </aside>
+      <section>
+        <div class="section__navbar" style="display: flex">
+          <div>
+            <span class="sort-label" style="margin-right: 10px"
+              >Sắp xếp theo</span
+            >
+            <button class="button-popular" style="margin-right: 10px">
+              Phổ Biến
+            </button>
+            <button class="button-latest" style="margin-right: 10px">
+              Mới nhất
+            </button>
+            <button class="button-bestseller" style="margin-right: 10px">
+              Bán Chạy
+            </button>
+            <div class="section__navbar--price">
+              <div class="section__navbar--price--label">
+                <span>Giá</span>
+                <i class="fas fa-chevron-down"></i>
+              </div>
+              <ul class="section__navbar--price--list">
+                <li><a href="">Giá: Thấp đến Cao</a></li>
+                <li><a href="">Giá: Cao đến Thấp</a></li>
+              </ul>
+            </div>
+          </div>
+          <div style="display: flex" class="section__navbar--page">
+            <span style="font-size: 15px"
+              ><span style="color: #e74408">1</span>/14</span
+            >
+            <div class="arrow-container">
+              <div class="left-arrow"><i class="fas fa-chevron-left"></i></div>
+              <div class="right-arrow">
+                <i class="fas fa-chevron-right"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Product -->
+        <div class="product">
+          <div class="product__columm">
+            <div class="product__columm--item">
+              <div style="border-bottom: 0.5px solid grey">
+                <img
+                  class="home__product--item-img"
+                  src="https://img.abaha.vn/photos/resized/320x/83-1618642699-myphamohui-lgvina.png"
+                  alt=""
+                />
+              </div>
+              <div>
+                <h4 class="home__product--item--name">Kem lót nâng tông</h4>
+              </div>
+              <div class="home__product--item--price">
+                <div><span class="old-price">1.200.000đ</span></div>
+                <div><span class="new-price">1.000.000đ</span></div>
+              </div>
+              <div class="home__product--item--icon">
+                <div>
+                  <i
+                    class="fa-solid fa-heart"
+                    style="color: rgb(224, 10, 10)"
+                  ></i>
+                </div>
+                <div>
+                  <div>
+                    <i
+                      class="fa-solid fa-star fa-2xs"
+                      style="color: rgb(165, 165, 165)"
+                    ></i>
+                    <i
+                      class="fa-solid fa-star fa-2xs"
+                      style="color: rgb(165, 165, 165)"
+                    ></i>
+                    <i
+                      class="fa-solid fa-star fa-2xs"
+                      style="color: rgb(165, 165, 165)"
+                    ></i>
+                    <i
+                      class="fa-solid fa-star fa-2xs"
+                      style="color: rgb(165, 165, 165)"
+                    ></i>
+                    <i
+                      class="fa-solid fa-star fa-2xs"
+                      style="color: rgb(165, 165, 165)"
+                    ></i>
+                    <span style="font-size: 13px; color: #2f2f2f"
+                      >88 đã bán</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="home__product--item--origin">
+                <div><span>Whoo</span></div>
+                <div><span>Nhật Bản</span></div>
+              </div>
+            </div>
+            <div class="product__columm--item">
+              <div style="border-bottom: 0.5px solid grey">
+                <img
+                  class="home__product--item-img"
+                  src="https://img.abaha.vn/photos/resized/320x/83-1618642699-myphamohui-lgvina.png"
+                  alt=""
+                />
+              </div>
+              <div>
+                <h4 class="home__product--item--name">Set phần Nước</h4>
+              </div>
+              <div class="home__product--item--price">
+                <div><span class="old-price">1.500.000đ</span></div>
+                <div><span class="new-price">1.200.000đ</span></div>
+              </div>
+              <div class="home__product--item--icon">
+                <div>
+                  <i
+                    class="fa-solid fa-heart"
+                    style="color: rgb(224, 10, 10)"
+                  ></i>
+                </div>
+                <div>
+                  <div>
+                    <i
+                      class="fa-solid fa-star fa-2xs"
+                      style="color: rgb(165, 165, 165)"
+                    ></i>
+                    <i
+                      class="fa-solid fa-star fa-2xs"
+                      style="color: rgb(165, 165, 165)"
+                    ></i>
+                    <i
+                      class="fa-solid fa-star fa-2xs"
+                      style="color: rgb(165, 165, 165)"
+                    ></i>
+                    <i
+                      class="fa-solid fa-star fa-2xs"
+                      style="color: rgb(165, 165, 165)"
+                    ></i>
+                    <i
+                      class="fa-solid fa-star fa-2xs"
+                      style="color: rgb(165, 165, 165)"
+                    ></i>
+                    <span style="font-size: 13px; color: #2f2f2f"
+                      >856 đã bán</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="home__product--item--origin">
+                <div><span>Whoo</span></div>
+                <div><span>Nhật Bản</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="product__columm">
+            <div class="product__columm--item">
+              <div style="border-bottom: 0.5px solid grey">
+                <img
+                  class="home__product--item-img"
+                  src="https://img.abaha.vn/photos/resized/320x/83-1618642699-myphamohui-lgvina.png"
+                  alt=""
+                />
+              </div>
+              <div>
+                <h4 class="home__product--item--name">Set Nước Hoa Hồng</h4>
+              </div>
+              <div class="home__product--item--price">
+                <div><span class="old-price">1.300.000đ</span></div>
+                <div><span class="new-price">1.050.000đ</span></div>
+              </div>
+              <div class="home__product--item--icon">
+                <div>
+                  <i
+                    class="fa-solid fa-heart"
+                    style="color: rgb(224, 10, 10)"
+                  ></i>
+                </div>
+                <div>
+                  <div>
+                    <i
+                      class="fa-solid fa-star fa-2xs"
+                      style="color: rgb(165, 165, 165)"
+                    ></i>
+                    <i
+                      class="fa-solid fa-star fa-2xs"
+                      style="color: rgb(165, 165, 165)"
+                    ></i>
+                    <i
+                      class="fa-solid fa-star fa-2xs"
+                      style="color: rgb(165, 165, 165)"
+                    ></i>
+                    <i
+                      class="fa-solid fa-star fa-2xs"
+                      style="color: rgb(165, 165, 165)"
+                    ></i>
+                    <i
+                      class="fa-solid fa-star fa-2xs"
+                      style="color: rgb(165, 165, 165)"
+                    ></i>
+                    <span style="font-size: 13px; color: #2f2f2f"
+                      >850 đã bán</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="home__product--item--origin">
+                <div><span>Whoo</span></div>
+                <div><span>Nhật Bản</span></div>
+              </div>
+            </div>
+            <div class="product__columm--item">
+              <div style="border-bottom: 0.5px solid grey">
+                <img
+                  class="home__product--item-img"
+                  src="https://img.abaha.vn/photos/resized/320x/83-1618642699-myphamohui-lgvina.png"
+                  alt=""
+                />
+              </div>
+              <div>
+                <h4 class="home__product--item--name">Set Kem Chống Nắng</h4>
+              </div>
+              <div class="home__product--item--price">
+                <div><span class="old-price">1.300.000đ</span></div>
+                <div><span class="new-price">1.200.000đ</span></div>
+              </div>
+              <div class="home__product--item--icon">
+                <div>
+                  <i
+                    class="fa-solid fa-heart"
+                    style="color: rgb(224, 10, 10)"
+                  ></i>
+                </div>
+                <div>
+                  <div>
+                    <i
+                      class="fa-solid fa-star fa-2xs"
+                      style="color: rgb(165, 165, 165)"
+                    ></i>
+                    <i
+                      class="fa-solid fa-star fa-2xs"
+                      style="color: rgb(165, 165, 165)"
+                    ></i>
+                    <i
+                      class="fa-solid fa-star fa-2xs"
+                      style="color: rgb(165, 165, 165)"
+                    ></i>
+                    <i
+                      class="fa-solid fa-star fa-2xs"
+                      style="color: rgb(165, 165, 165)"
+                    ></i>
+                    <i
+                      class="fa-solid fa-star fa-2xs"
+                      style="color: rgb(165, 165, 165)"
+                    ></i>
+                    <span style="font-size: 13px; color: #2f2f2f"
+                      >45 đã bán</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="home__product--item--origin">
+                <div><span>Whoo</span></div>
+                <div><span>Nhật Bản</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="product__columm">
+            <div class="product__columm--item">
+              <div style="border-bottom: 0.5px solid grey">
+                <img
+                  class="home__product--item-img"
+                  src="https://img.abaha.vn/photos/resized/320x/83-1618642699-myphamohui-lgvina.png"
+                  alt=""
+                />
+              </div>
+              <div>
+                <h4 class="home__product--item--name">Set Phấn Phủ</h4>
+              </div>
+              <div class="home__product--item--price">
+                <div><span class="old-price">1.100.000đ</span></div>
+                <div><span class="new-price">1.000.000đ</span></div>
+              </div>
+              <div class="home__product--item--icon">
+                <div>
+                  <i
+                    class="fa-solid fa-heart"
+                    style="color: rgb(224, 10, 10)"
+                  ></i>
+                </div>
+                <div>
+                  <div>
+                    <i
+                      class="fa-solid fa-star fa-2xs"
+                      style="color: rgb(165, 165, 165)"
+                    ></i>
+                    <i
+                      class="fa-solid fa-star fa-2xs"
+                      style="color: rgb(165, 165, 165)"
+                    ></i>
+                    <i
+                      class="fa-solid fa-star fa-2xs"
+                      style="color: rgb(165, 165, 165)"
+                    ></i>
+                    <i
+                      class="fa-solid fa-star fa-2xs"
+                      style="color: rgb(165, 165, 165)"
+                    ></i>
+                    <i
+                      class="fa-solid fa-star fa-2xs"
+                      style="color: rgb(165, 165, 165)"
+                    ></i>
+                    <span style="font-size: 13px; color: #2f2f2f"
+                      >200 đã bán</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="home__product--item--origin">
+                <div><span>Whoo</span></div>
+                <div><span>Nhật Bản</span></div>
+              </div>
+            </div>
+            <div class="product__columm--item">
+              <div style="border-bottom: 0.5px solid grey">
+                <img
+                  class="home__product--item-img"
+                  src="https://img.abaha.vn/photos/resized/320x/83-1618642699-myphamohui-lgvina.png"
+                  alt=""
+                />
+              </div>
+              <div>
+                <h4 class="home__product--item--name">Set Son Whoo Luxury</h4>
+              </div>
+              <div class="home__product--item--price">
+                <div><span class="old-price">1.100.000đ</span></div>
+                <div><span class="new-price">1.000.000đ</span></div>
+              </div>
+              <div class="home__product--item--icon">
+                <div>
+                  <i
+                    class="fa-solid fa-heart"
+                    style="color: rgb(224, 10, 10)"
+                  ></i>
+                </div>
+                <div>
+                  <div>
+                    <i
+                      class="fa-solid fa-star fa-2xs"
+                      style="color: rgb(165, 165, 165)"
+                    ></i>
+                    <i
+                      class="fa-solid fa-star fa-2xs"
+                      style="color: rgb(165, 165, 165)"
+                    ></i>
+                    <i
+                      class="fa-solid fa-star fa-2xs"
+                      style="color: rgb(165, 165, 165)"
+                    ></i>
+                    <i
+                      class="fa-solid fa-star fa-2xs"
+                      style="color: rgb(165, 165, 165)"
+                    ></i>
+                    <i
+                      class="fa-solid fa-star fa-2xs"
+                      style="color: rgb(165, 165, 165)"
+                    ></i>
+                    <span style="font-size: 13px; color: #2f2f2f"
+                      >422 đã bán</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="home__product--item--origin">
+                <div><span>Whoo</span></div>
+                <div><span>Nhật Bản</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="product__columm">
+            <div class="product__columm--item">
+              <div style="border-bottom: 0.5px solid grey">
+                <img
+                  class="home__product--item-img"
+                  src="https://img.abaha.vn/photos/resized/320x/83-1618642699-myphamohui-lgvina.png"
+                  alt=""
+                />
+              </div>
+              <div>
+                <h4 class="home__product--item--name">Set Kem Mắt tái sinh</h4>
+              </div>
+              <div class="home__product--item--price">
+                <div><span class="old-price">1.400.000đ</span></div>
+                <div><span class="new-price">1.100.000đ</span></div>
+              </div>
+              <div class="home__product--item--icon">
+                <div>
+                  <i
+                    class="fa-solid fa-heart"
+                    style="color: rgb(224, 10, 10)"
+                  ></i>
+                </div>
+                <div>
+                  <div>
+                    <i
+                      class="fa-solid fa-star fa-2xs"
+                      style="color: rgb(165, 165, 165)"
+                    ></i>
+                    <i
+                      class="fa-solid fa-star fa-2xs"
+                      style="color: rgb(165, 165, 165)"
+                    ></i>
+                    <i
+                      class="fa-solid fa-star fa-2xs"
+                      style="color: rgb(165, 165, 165)"
+                    ></i>
+                    <i
+                      class="fa-solid fa-star fa-2xs"
+                      style="color: rgb(165, 165, 165)"
+                    ></i>
+                    <i
+                      class="fa-solid fa-star fa-2xs"
+                      style="color: rgb(165, 165, 165)"
+                    ></i>
+                    <span style="font-size: 13px; color: #2f2f2f"
+                      >99 đã bán</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="home__product--item--origin">
+                <div><span>Whoo</span></div>
+                <div><span>Nhật Bản</span></div>
+              </div>
+            </div>
+            <div class="product__columm--item">
+              <div style="border-bottom: 0.5px solid grey">
+                <img
+                  class="home__product--item-img"
+                  src="https://img.abaha.vn/photos/resized/320x/83-1618642699-myphamohui-lgvina.png"
+                  alt=""
+                />
+              </div>
+              <div>
+                <h4 class="home__product--item--name">Set Dưỡng Ẩm</h4>
+              </div>
+              <div class="home__product--item--price">
+                <div><span class="old-price">1.200.000đ</span></div>
+                <div><span class="new-price">1.100.000đ</span></div>
+              </div>
+              <div class="home__product--item--icon">
+                <div>
+                  <i
+                    class="fa-solid fa-heart"
+                    style="color: rgb(224, 10, 10)"
+                  ></i>
+                </div>
+                <div>
+                  <div>
+                    <i
+                      class="fa-solid fa-star fa-2xs"
+                      style="color: rgb(165, 165, 165)"
+                    ></i>
+                    <i
+                      class="fa-solid fa-star fa-2xs"
+                      style="color: rgb(165, 165, 165)"
+                    ></i>
+                    <i
+                      class="fa-solid fa-star fa-2xs"
+                      style="color: rgb(165, 165, 165)"
+                    ></i>
+                    <i
+                      class="fa-solid fa-star fa-2xs"
+                      style="color: rgb(165, 165, 165)"
+                    ></i>
+                    <i
+                      class="fa-solid fa-star fa-2xs"
+                      style="color: rgb(165, 165, 165)"
+                    ></i>
+                    <span style="font-size: 13px; color: #2f2f2f"
+                      >200 đã bán</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="home__product--item--origin">
+                <div><span>Whoo</span></div>
+                <div><span>Nhật Bản</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="product__columm">
+            <div class="product__columm--item">
+              <div style="border-bottom: 0.5px solid grey">
+                <img
+                  class="home__product--item-img"
+                  src="https://img.abaha.vn/photos/resized/320x/83-1618642699-myphamohui-lgvina.png"
+                  alt=""
+                />
+              </div>
+              <div>
+                <h4 class="home__product--item--name">Set sữa rửa mặt</h4>
+              </div>
+              <div class="home__product--item--price">
+                <div><span class="old-price">1.100.000đ</span></div>
+                <div><span class="new-price">1.000.000đ</span></div>
+              </div>
+              <div class="home__product--item--icon">
+                <div>
+                  <i
+                    class="fa-solid fa-heart"
+                    style="color: rgb(224, 10, 10)"
+                  ></i>
+                </div>
+                <div>
+                  <div>
+                    <i
+                      class="fa-solid fa-star fa-2xs"
+                      style="color: rgb(165, 165, 165)"
+                    ></i>
+                    <i
+                      class="fa-solid fa-star fa-2xs"
+                      style="color: rgb(165, 165, 165)"
+                    ></i>
+                    <i
+                      class="fa-solid fa-star fa-2xs"
+                      style="color: rgb(165, 165, 165)"
+                    ></i>
+                    <i
+                      class="fa-solid fa-star fa-2xs"
+                      style="color: rgb(165, 165, 165)"
+                    ></i>
+                    <i
+                      class="fa-solid fa-star fa-2xs"
+                      style="color: rgb(165, 165, 165)"
+                    ></i>
+                    <span style="font-size: 13px; color: #2f2f2f"
+                      >243 đã bán</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="home__product--item--origin">
+                <div><span>Whoo</span></div>
+                <div><span>Nhật Bản</span></div>
+              </div>
+            </div>
+            <div class="product__columm--item">
+              <div style="border-bottom: 0.5px solid grey">
+                <img
+                  class="home__product--item-img"
+                  src="https://img.abaha.vn/photos/resized/320x/83-1618642699-myphamohui-lgvina.png"
+                  alt=""
+                />
+              </div>
+              <div>
+                <h4 class="home__product--item--name">Bộ Dưỡng Trắng Da</h4>
+              </div>
+              <div class="home__product--item--price">
+                <div><span class="old-price">1.300.000đ</span></div>
+                <div><span class="new-price">1.000.000đ</span></div>
+              </div>
+              <div class="home__product--item--icon">
+                <div>
+                  <i
+                    class="fa-solid fa-heart"
+                    style="color: rgb(224, 10, 10)"
+                  ></i>
+                </div>
+                <div>
+                  <div>
+                    <i
+                      class="fa-solid fa-star fa-2xs"
+                      style="color: rgb(165, 165, 165)"
+                    ></i>
+                    <i
+                      class="fa-solid fa-star fa-2xs"
+                      style="color: rgb(165, 165, 165)"
+                    ></i>
+                    <i
+                      class="fa-solid fa-star fa-2xs"
+                      style="color: rgb(165, 165, 165)"
+                    ></i>
+                    <i
+                      class="fa-solid fa-star fa-2xs"
+                      style="color: rgb(165, 165, 165)"
+                    ></i>
+                    <i
+                      class="fa-solid fa-star fa-2xs"
+                      style="color: rgb(165, 165, 165)"
+                    ></i>
+                    <span style="font-size: 13px; color: #2f2f2f"
+                      >400 đã bán</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="home__product--item--origin">
+                <div><span>Whoo</span></div>
+                <div><span>Nhật Bản</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Page navigation -->
+        <div class="page__navigation--container">
+          <div class="page__navigation--left--arrow">
+            <i class="nagination__item--icon fas fa-chevron-left"></i>
+          </div>
+          <div class="page__navigation--page--specialnum"><span>1</span></div>
+          <div class="page__navigation--page--num"><span>2</span></div>
+          <div class="page__navigation--page--num"><span>3</span></div>
+          <div class="page__navigation--page--num"><span>4</span></div>
+          <div class="page__navigation--page--num"><span>5</span></div>
+          <div class="page__navigation--page--num"><span>6</span></div>
+          <div class="page__navigation--etc--icon">
+            <i class="fa-solid fa-ellipsis fa-xs" style="color: #7e7e7e"></i>
+          </div>
+          <div class="page__navigation--page--num"><span>14</span></div>
+          <div class="page__navigation--right--arrow">
+            <i class="nagination__item--icon fas fa-chevron-right"></i>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <div class="footer__section"></div>
+      <div class="footer__shopee--infor">
+        <div>
+          <h3 class="footer__shopee--infor--heading">Chăm sóc khách hàng</h3>
+          <ul class="footer__shopee--infor--detail">
+            <li>Trung tâm trợ giúp</li>
+            <li>TickID Mall</li>
+            <li>Hướng dẫn mua hàng</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer__shopee--infor--heading">Về TickID</h3>
+          <ul class="footer__shopee--infor--detail">
+            <li>Giới thiệu về TickID Việt Nam</li>
+            <li>Tuyển Dụng</li>
+            <li>Điều khoản TickID</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer__shopee--infor--heading">Danh Mục</h3>
+          <ul class="footer__shopee--infor--detail">
+            <li>Mỹ Phẩm</li>
+            <li>Quần Áo</li>
+            <li>Đồ điện tử</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer__shopee--infor--heading">
+            Theo dõi chúng tôi trên
+          </h3>
+          <ul class="footer__shopee--infor--detail">
+            <li>
+              <i class="fa-brands fa-facebook fa-xs" style="color: #384152"></i>
+              <span>Facebook</span>
+            </li>
+            <li>
+              <i class="fa-brands fa-instagram" style="color: #525252"></i>
+              <span>Instagram</span>
+            </li>
+            <li>
+              <i class="fa-brands fa-linkedin" style="color: #40454f"></i>
+              <span>Linkedin</span>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer__shopee--infor--heading">
+            Tải ứng dụng trên cửa hàng
+          </h3>
+          <div class="footer__qr--area">
+            <span class="footer__qr">
+              <img src="maqr.png" alt="" class="footer__qr--img" />
+            </span>
+            <ul class="footer__shopee--infor--detail">
+              <li>
+                <i class="fa-brands fa-app-store" style="color: #3b404a"></i>
+                <span>App Store</span>
+              </li>
+              <li>
+                <i class="fa-brands fa-google-play" style="color: #484b51"></i>
+                <span>Google Play</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer__writer--infor">
+        <h5>Make by: Tus</h5>
+        <div>
+          <span>Email: mudotet@gmail.com</span><br />
+          <span>Phone: 0865812xxx</span><br />
+          <span>Address: HaNoi University of Mining and Technology</span>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>@2025 - Copyright belong to Phan Thanh Tú</span>
+      </div>
+    </footer>
+  </body>
+</html>
